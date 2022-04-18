@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap");
+@import "reset";
+@import "color";
+
+@mixin button_check($clr, $br) {
+  background: $clr 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 16px 48px $btn-bx;
+  border-radius: $br;
+  opacity: 1;
+}
+@mixin common {
+  color: $black !important;
+  opacity: 1 !important;
+}
+
+$h1: normal normal 900 2.5rem Nunito Sans !important;
+$h2: normal normal bold 2.1875rem Nunito Sans !important;
+$h3: normal normal bold 1.5rem Nunito Sans !important;
+$p: normal normal normal 1.125rem Nunito Sans !important;
+$a: normal normal 600 1.188rem Segoe UI !important;
+$padVal: 10rem;
+
+.bg-nav {
+  background-color: $bg-gray;
+}
+.navbar {
+  border-bottom: 1px solid $nav-border;
+}
+.bb {
+  border-bottom: 1px solid $nav-border;
+}
+.navbar-nav {
+  li {
+    a {
+      font: $a;
+      @include common();
+    }
+  }
+}
+
+.c1 {
+  h1 {
+    font: $h1;
+    letter-spacing: 0px;
+    @include common();
+    padding-top: $padVal - 4;
+  }
+  p {
+    font: $p;
+    @include common();
+    padding-top: $padVal - 8;
+  }
+}
+.banner-img {
+  width: 100%;
+}
+
+.mid-content-position {
+  position: relative;
+  background-color: $bg-gray !important;
+  margin-top: 2rem;
+
+  .top-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(150% + 1.3px);
+      height: 150px;
+    }
+    .shape-fill {
+      fill: #ffffff;
+    }
+  }
+  .mid-content {
+    padding: $padVal - 5 0 $padVal * 2 0;
+
+    h2 {
+      font: $h2;
+      @include common();
+    }
+    h3 {
+      font: $h3;
+      @include common();
+    }
+    .b-round {
+      border-radius: 1.125rem !important;
+      box-shadow: 0px 3px 6px $btn-bx;
+      margin: $padVal - 8 0 $padVal - 7 0;
+    }
+  }
+  .btm-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(170% + 1.3px);
+      height: 260px;
+    }
+
+    .shape-fill {
+      fill: #ffffff;
+    }
+  }
+}
+
+.mid-content-position2 {
+  position: relative;
+  height: 22rem;
+  .mid-content2 {
+    position: absolute;
+    top: -$padVal * 2 - 4;
+    padding: $padVal - 5 0 $padVal * 2 0;
+
+    .container {
+      padding: $padVal - 5 0;
+    }
+    .card-img-top {
+      width: auto;
+      height: 120px;
+    }
+    h2 {
+      font: $h2;
+      @include common();
+    }
+    h3 {
+      font: $h3;
+      @include common();
+    }
+  }
+}
+
+.mid-content-position3 {
+  .mid-content3 {
+    .img-icon {
+      p {
+        font: $p;
+        @include common();
+      }
+    }
+  }
+}
+.mid-content-position4 {
+  .mid-content4 {
+    .jumbotron {
+      .jumbo-position {
+        position: relative;
+        top: 5rem;
+        .b-round {
+          @include button_check($br: 30px, $clr: $white);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $black;
+  margin-top: $padVal;
+  padding: $padVal 0 $padVal - 7;
+  .row {
+    padding-top: $padVal - 6;
+  }
+}
+
+.btn {
+  @include button_check($br: 33px, $clr: $btn-blue);
+  padding: 1rem 3rem !important;
+  color: $white !important;
+}
+
+.jumbotron {
+  @include button_check($br: 48px, $clr: $bg-gray);
+}
+
+@media only screen and (max-width: 768px) {
+  .b-round {
+    margin: $padVal - 7 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mid-content-position2 {
+    height: $padVal * 6;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mid-content-position2 {
+    height: $padVal * 6.5;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .mid-content-position2 {
+    height: $padVal * 7;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .mid-content-position2 {
+    height: $padVal * 7.5;
+  }
+}
+@media only screen and (min-width: 220px) and (max-width: 375px) {
+  .mid-content-position2 {
+    height: $padVal * 9.5;
+  }
+}

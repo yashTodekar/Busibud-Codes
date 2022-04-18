@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.bg-nav {
+  background-color: #f8fafc;
+}
+
+.navbar {
+  border-bottom: 1px solid #707070;
+}
+
+.bb {
+  border-bottom: 1px solid #707070;
+}
+
+.navbar-nav li a {
+  font: normal normal 600 1.188rem Segoe UI !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.c1 h1 {
+  font: normal normal 900 2.5rem Nunito Sans !important;
+  letter-spacing: 0px;
+  color: #000000 !important;
+  opacity: 1 !important;
+  padding-top: 6rem;
+}
+
+.c1 p {
+  font: normal normal normal 1.125rem Nunito Sans !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+  padding-top: 2rem;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.mid-content-position {
+  position: relative;
+  background-color: #f8fafc !important;
+  margin-top: 2rem;
+}
+
+.mid-content-position .top-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.mid-content-position .top-curve svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 150px;
+}
+
+.mid-content-position .top-curve .shape-fill {
+  fill: #ffffff;
+}
+
+.mid-content-position .mid-content {
+  padding: 5rem 0 20rem 0;
+}
+
+.mid-content-position .mid-content h2 {
+  font: normal normal bold 2.1875rem Nunito Sans !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.mid-content-position .mid-content h3 {
+  font: normal normal bold 1.5rem Nunito Sans !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.mid-content-position .mid-content .b-round {
+  border-radius: 1.125rem !important;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  margin: 2rem 0 3rem 0;
+}
+
+.mid-content-position .btm-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.mid-content-position .btm-curve svg {
+  position: relative;
+  display: block;
+  width: calc(170% + 1.3px);
+  height: 260px;
+}
+
+.mid-content-position .btm-curve .shape-fill {
+  fill: #ffffff;
+}
+
+.mid-content-position2 {
+  position: relative;
+  height: 22rem;
+}
+
+.mid-content-position2 .mid-content2 {
+  position: absolute;
+  top: -24rem;
+  padding: 5rem 0 20rem 0;
+}
+
+.mid-content-position2 .mid-content2 .container {
+  padding: 5rem 0;
+}
+
+.mid-content-position2 .mid-content2 .card-img-top {
+  width: auto;
+  height: 120px;
+}
+
+.mid-content-position2 .mid-content2 h2 {
+  font: normal normal bold 2.1875rem Nunito Sans !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.mid-content-position2 .mid-content2 h3 {
+  font: normal normal bold 1.5rem Nunito Sans !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.mid-content-position3 .mid-content3 .img-icon p {
+  font: normal normal normal 1.125rem Nunito Sans !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.mid-content-position4 .mid-content4 .jumbotron .jumbo-position {
+  position: relative;
+  top: 5rem;
+}
+
+.mid-content-position4 .mid-content4 .jumbotron .jumbo-position .b-round {
+  background: #ffffff 0% 0% no-repeat padding-box !important;
+  -webkit-box-shadow: 0px 16px 48px #00000029;
+          box-shadow: 0px 16px 48px #00000029;
+  border-radius: 30px;
+  opacity: 1;
+}
+
+footer {
+  background-color: #000000;
+  margin-top: 10rem;
+  padding: 10rem 0 3rem;
+}
+
+footer .row {
+  padding-top: 4rem;
+}
+
+.btn {
+  background: #1492e6 0% 0% no-repeat padding-box !important;
+  -webkit-box-shadow: 0px 16px 48px #00000029;
+          box-shadow: 0px 16px 48px #00000029;
+  border-radius: 33px;
+  opacity: 1;
+  padding: 1rem 3rem !important;
+  color: #ffffff !important;
+}
+
+.jumbotron {
+  background: #f8fafc 0% 0% no-repeat padding-box !important;
+  -webkit-box-shadow: 0px 16px 48px #00000029;
+          box-shadow: 0px 16px 48px #00000029;
+  border-radius: 48px;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .b-round {
+    margin: 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mid-content-position2 {
+    height: 60rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mid-content-position2 {
+    height: 65rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .mid-content-position2 {
+    height: 70rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .mid-content-position2 {
+    height: 75rem;
+  }
+}
+
+@media only screen and (min-width: 220px) and (max-width: 375px) {
+  .mid-content-position2 {
+    height: 95rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
